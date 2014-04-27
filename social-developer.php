@@ -33,19 +33,28 @@ function lw_sd_github_shortcode( $atts ) {
   extract( shortcode_atts(
     
     array(
-      'link'  => 'http://github.com',
-      'size'  => '12px'
+      'link'  => 'https://github.com',
+      'size'  => '12px',
+      'new_tab' => 'yes'
     ), $atts, 'lw_sd_github_shortcode' )
 
   );
 
+  if ( $new_tab == 'no' || $new_tab == 'false' ) {
+    $target = '_self';
+  }
+  else {
+    $target = '_blank';
+  }
+
   // Set HTML
-  $output = '<a href="' . $link . '"><span  style="font-size: ' . $size . ';height: ' . $size . ';width: ' . $size . ';" class="genericon genericon-github"></span></a>';
+  $output = '<a href="' . $link . '" target="' . $target . '"><span style="font-size: ' . $size . ';height: ' . $size . ';width: ' . $size . ';" class="genericon genericon-github"></span></a>';
 
   return $output;
 }
 
 add_shortcode( 'sd_github', 'lw_sd_github_shortcode' );
+
 
 /**
  * Add Codepen shortcode
@@ -57,13 +66,21 @@ function lw_sd_codepen_shortcode( $atts ) {
 
     array(
       'link'  => 'http://codepen.io',
-      'size'  => '12px'
+      'size'  => '12px',
+      'new_tab' => 'yes'
     ), $atts, 'lw_sd_codepen_shortcode' )
 
   );
 
+  if ( $new_tab == 'no' || $new_tab == 'false' ) {
+    $target = '_self';
+  }
+  else {
+    $target = '_blank';
+  }
+
   // Set HTML
-  $output = '<a href="' . $link . '"><span  style="font-size: ' . $size . ';height: ' . $size . ';width: ' . $size . ';" class="genericon genericon-codepen"></span></a>';
+  $output = '<a href="' . $link . '"  target="' . $target . '"><span style="font-size: ' . $size . ';height: ' . $size . ';width: ' . $size . ';" class="genericon genericon-codepen"></span></a>';
 
   return $output;
 }

@@ -6,13 +6,13 @@ A Wordpress plugin for web designers and developers to easily add Github and Cod
 Instructions
 ------------
 The attributes are optional.
-[sd_github] would default to http://github.com and a size of 12px.
+[sd_github] would default to https://github.com and a size of 12px.
 [sd_codepen] would default to http://codepen.io and a size of 12px.
 
 However you can specify your username and custom sizes as follows:
 
 Github Icon Shortcode
-[sd_github link="http://github.com/{your-user-name}" size="{the-size-in-px}"]
+[sd_github link="https://github.com/{your-user-name}" size="{the-size-in-px}"]
 
 Codepen Icon Shortcode
 [sd_codepen link="http://codepen.io/{your-user-name}" size="{the-size-in-px}"]
