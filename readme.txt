@@ -54,7 +54,9 @@ social icons behavior.
 
 = What format are the icons? =
 
-The icons are infact a font called Genericons from the awesome guys and gals at Automattic.
+The icons are infact a font called [Genericons](http://genericons.com/ "a free, GPL, flexible icon font for blogs!") from the awesome guys and gals at Automattic.
+
+(Look for the smiley face)
 
 = Can I change the color of the icon? =
 
