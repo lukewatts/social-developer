@@ -34,7 +34,7 @@ function lw_sd_github_shortcode( $atts ) {
     
     array(
       'link'  => 'https://github.com',
-      'size'  => '12px',
+      'size'  => '22px',
       'new_tab' => 'yes'
     ), $atts, 'lw_sd_github_shortcode' )
 
@@ -66,7 +66,7 @@ function lw_sd_codepen_shortcode( $atts ) {
 
     array(
       'link'  => 'http://codepen.io',
-      'size'  => '12px',
+      'size'  => '22px',
       'new_tab' => 'yes'
     ), $atts, 'lw_sd_codepen_shortcode' )
 
@@ -98,10 +98,10 @@ function lw_sd_quicktags() {
 
   <script type="text/javascript">
   // Github Shortcode
-  QTags.addButton( 'lw_sd_github', 'Github', '[sd_github link="https://github.com/" size="12px" new_tab="yes"]', '', 'g', 'Github Icon Shortcode', 200 );
+  QTags.addButton( 'lw_sd_github', 'Github', '[sd_github link="https://github.com/" size="22px" new_tab="yes"]', '', 'g', 'Github Icon Shortcode', 200 );
 
   // Codepen Shortcode
-  QTags.addButton( 'lw_sd_codepen', 'Codepen', '[sd_codepen link="http://codepen.io/" size="12px" new_tab="yes"]', '', 'p', 'Codepen Icon Shortcode', 200 );
+  QTags.addButton( 'lw_sd_codepen', 'Codepen', '[sd_codepen link="http://codepen.io/" size="22px" new_tab="yes"]', '', 'p', 'Codepen Icon Shortcode', 200 );
   </script>
   
   <?php

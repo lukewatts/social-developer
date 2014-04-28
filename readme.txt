@@ -35,16 +35,17 @@ The attributes are optional.
 
 Here is an example of all the attributes you can set in each shortcode.
 
-Github
+= Github =
 [sd_github link="https://github.com/{your-user-name}" size="{size-in-px}" new_tab="{yes/no||true/false}"]
 
-Codepen
+= Codepen =
 [sd_codepen link="http://codepen.io/{your-user-name}" size="{size-in-px}" new_tab="{yes/no||true/false}"]
 
-Example:
-[sd_github link="https://github.com/lukewatts" size="22px" new_tab="no"]
+= Example =
+[sd_github link="https://github.com/lukewatts" size="48px" new_tab="no"]
 
-NOTE: The defaults are the Github's and Codepen's homepage URL respectively, size="12px" and new_tab="yes"
+= NOTE =
+The defaults are the Github's and Codepen's homepage URL respectively, size="22px" and new_tab="yes"
 The new_tab attribute will open the link in a new tab by default. You can set this to open in the current
 tab by setting new_tab="no" or new_tab="false". Whichever you prefer. This is so it can match your themes
 social icons behavior.
@@ -77,7 +78,15 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 = 0.1 =
 * First release
 
-== Future features ==
+== Features ==
+
+= Current features =
+
+* Shortcodes for Github and Codepen icons
+* Set URL, size of icon and whether or not to open the link in a new tab or not
+* "Quicktag" buttons in HTML editor for quick insertion of each shortcode
+
+= Futire Features =
 
 * Admin panel where users can set the colors, opacity and transition for :hover and :active states
 * A widget with more options
